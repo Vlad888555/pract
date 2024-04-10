@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #e00303;
+}
+
+h1 {
+  color: #333;
+}
+.forym{
+  text-align: center
+}
+
+#postsContainer {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.post {
+  margin-bottom: 20px;
+}
+
+.post h1 {
+  color: #3498db;
+}
+
+.post p {
+  color: #555;
+}
+.home{
+  padding: 25px;
+}
+.info-user{
+  min-width: 200px;
+  max-width: 300px;
+}
+#user-post{
+  background: #555;
+  min-width: 400px;
+  min-height: 100px;
+}
+.we{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #3498db;
+  color: #fff;
+  padding: 0.5em;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s, top 0.5s;
+  white-space: pre-line;
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+  top: 2em;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ff0000;
+}
+/* CSS */
+.search-container {
+  text-align: center; /* Центрирование содержимого */
+  margin-top: 20px; /* Дополнительный отступ сверху */
+}
