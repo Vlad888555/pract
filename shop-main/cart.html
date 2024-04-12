@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo-reason-svgrepo-com.svg" alt="logo">
+        </a>
+        <div class="contacts">
+            <div class="link"><a href="#"><img src="assets/images/facebook-round-svgrepo-com.svg" alt=""></a></div>
+            <div class="link"><a href="#"><img src="assets/images/github-round-svgrepo-com.svg" alt=""></a></div>
+        </div>
+        <div class="user">
+            <button>Войти</button>
+            <a href="cart.html">
+                <img src="assets/images/cart-large-svgrepo-com.svg" alt="">
+            </a>
+            <button id="show_popup_search" class="icon">
+                <img src="assets/images/search-svgrepo-com.svg" alt="">
+            </button>
+        </div>
+        <div id="popup_search">
+            <div class="inner_container">
+                <form action="">
+                   <div>
+                        <label for="query">Поисковый запрос</label>
+                        <input id="query" type="text">
+                   </div>
+                    <button>Искать</button>
+                </form>
+                <div class="result">
+                    <a href="good.html" class="good">
+                        <div class="image">
+                            <img src="https://picsum.photos/id/1/300/300" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="name">Lorem ipsum dolor sit.</p>
+                        </div>
+                        <div class="price">
+                            <p>123 123</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Корзина</h1>
+        <div class="goods">
+            <a href="good.html" class="good">
+                <div class="image">
+                    <img src="https://picsum.photos/id/1/300/300" alt="">
+                </div>
+                <div class="text">
+                    <p class="name">Lorem ipsum dolor sit.</p>
+                    <p class="id">123123</p>
+                </div>
+                <div class="price">
+                    <p>123 123</p>
+                    <button class="delet_button">
+                        <img src="assets/images/delete-1487-svgrepo-com.svg" alt="">
+                    </button>
+                </div>
+            </a>
+        </div>
+        <div class="actions">
+            <button>Удалить всё</button>
+        </div>
+        <div class="total">
+            <p class="text">Общая стоимость:</p>
+            <p class="price">112 980</p>
+        </div>
+        <div class="order">
+            <form action="" autocomplete="off">
+                <label for="phone">Телефон</label>
+                <input id="phone" type="text">
+                <label for="email">Почта</label>
+                <input id="email" type="text">
+                <label for="comment">Коментарий</label>
+                <textarea name="" id="comment" cols="30" rows="10"></textarea>
+                <button>Заказать</button>
+            </form>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="copyright">
+            <p>2077-20000 "4D"</p>
+            <p class="smaller">Магазин будущего</p>
+        </div>
+        <div class="contacts">
+            <div class="link"><a href="#"><img src="assets/images/facebook-round-svgrepo-com.svg" alt=""></a></div>
+            <div class="link"><a href="#"><img src="assets/images/github-round-svgrepo-com.svg" alt=""></a></div>
+        </div>
+    </footer>
+
+<script src="assets/js/common.js"></script>
+
+</body>
+</html>
